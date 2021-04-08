@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 <img src="C:\Users\jaque\Pictures\Screenshots\network diagram.png" alt="network diagram" style="zoom:50%;" />
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
   - elk.yml
 
@@ -21,10 +21,10 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- Load balancers are integral in their nature to security, they are able to divert traffic from a companies main server to a public, rendering a DDOS Attack ineffective. The advantage of a jumpbox is in their isolation.  _ODO
+Load balancing ensures that the application will be highly secure, in addition to restricting traffic to the network.
+- Load balancers are integral in their nature to security, they are able to divert traffic from a companies main server to a public, rendering a DDOS Attack ineffective. The advantage of a jumpbox is in their isolation.
+- Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the system logs and system metric
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
 - filebeat watches for log files and sends them to elasticsearch
 - metricbeat collects metrics from the operating system or server.
 
@@ -43,16 +43,16 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump-box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 76.113.187.64  
+- this.is.my.ip
 
-Machines within the network can only be accessed by _____.
+Machines within the network can only be accessed by
 - Jump-Box
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 | -------- | ------------------- | -------------------- |
-| Jump Box | Yes                 | 76.113.187.64        |
+| Jump Box | Yes                 | this.is.my.ip        |
 | Web-1    | No                  |                      |
 | Web-2    | No                  |                      |
 
